@@ -3,14 +3,14 @@
 This is a collection of scripts for the webMethods Suite on Linux.
 They cover the following areas:
 
-- Installation
-- Development
+- Installation (yet to come)
+- Development (yet to come)
 - Operations
 
 
 ## Installation
 
-The scripted installation of the webMethods is not that difficult.
+The scripted installation of the webMethods Suite is not that difficult.
 But it can take some effort to figure out the exact steps and syntax.
 
 The scripts in this area are intended to serve as a starting point to speed
@@ -35,7 +35,7 @@ You can do the following things with components of the webMethods suite
 - Get log file names
 
 In addition the script provides a self-install mechanism that creates
-a config file, symbolic links etc. in $WM_ROOT/bin and /etc/init.d
+a config file, symbolic links etc. in $WEBMETHODS_HOME/bin and /etc/init.d
 (if installed by root).
 
 ### Documentation
