@@ -70,8 +70,8 @@
 #                    od      = OneData
 #                    spm     = Platform manager
 #                    cce     = Command Central
-#          		     mzcl    = Mashzone Cloud Agent
 #                    mz      = Mashzone
+#                    mzcl    = Mashzone Cloud Agent
 #
 #
 #     ./webmethods1015.sh install PATH_TO_WEBMETHODS
@@ -494,7 +494,7 @@ function install_aliases() {
     # -----------------------
     if [ -d "$PROFILE_DIR"  ]; then
 
-			# If file to contain aliases does not exist yet, create as empty
+		# If file to contain aliases does not exist yet, create as empty
 		if [ ! -e $PROFILE_WM ]; then
 			touch $PROFILE_WM
 			RET=$?
@@ -1275,7 +1275,7 @@ WM_LOCKFILE[12]=""
 WM_LOCKFILE[13]="" 
 WM_LOCKFILE[14]="" 
 WM_LOCKFILE[15]=""
-WM_LOCKFILE[16]="IntegrationsServer/bin/.lock"
+WM_LOCKFILE[16]="IntegrationServer/bin/.lock"
 
 # These are the pattern that are looked for when determining whether
 # a component is running or not. Also, during component shutdown
