@@ -10,11 +10,7 @@ They cover the following areas:
 
 ## Installation
 
-The scripted installation of the webMethods Suite is not that difficult.
-But it can take some effort to figure out the exact steps and syntax.
-
-The scripts in this area are intended to serve as a starting point to speed
-things up. Therefore they do not aim to cover every possible combination.
+Yet to come.
 
 ## Development
 
@@ -55,7 +51,7 @@ been updated for newer versions of the webMethods Suite.
 The decision to keep individual scripts for the various versions
 was made to easily handle the sometimes subtle differences
 (e.g. changes to paths) between versions. Also, it makes it
-easier to add new components (like the Microservices Runtime).
+easier to add new components.
 
 
 
