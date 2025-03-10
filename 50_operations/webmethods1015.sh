@@ -8,6 +8,9 @@
 # Reston, United States of America, and/or their suppliers.
 # http://www.softwareag.com
 
+# (c) Copyright 2025 JahnTech GmbH, Darmstadt, Germany.
+# https://jahntech.com
+
 #  SPDX-License-Identifier: Apache-2.0
 #
 #    Licensed under the Apache License, Version 2.0 (the "License");
@@ -36,8 +39,8 @@
 #        OPTIONS     -f             = force
 #                    -v             = verbose output
 #                    -c configFile  = provide custom config file (instead of /etc/webmethods1015.cfg)
-#                    -u USER        = provide custom user (instead of sag)
-#                    -g GROUP       = provide custom group (instead of sag)
+#                    -u USER        = provide custom user (instead of webm)
+#                    -g GROUP       = provide custom group (instead of webm)
 #
 #        COMMAND     start       = start (asynchronous)
 #                    stop        = stop (synchronous)
@@ -231,7 +234,7 @@ WM_FILE_ACCESSS_CFG=640
 WM_FILE_ACCESSS_BIN=750
 
 # Default user for running webMethods components
-WM_USER=sag
+WM_USER=webm
 
 # Default group for running webMethods components
 WM_GROUP=$WM_USER
@@ -1122,12 +1125,14 @@ function print_usage() {
     echo $"       $PRG {log|logfull} component"
     echo $"       $PRG {logfile|logfilefull} component"
     echo $"       $PRG status [component]"
-    echo $"       $PRG [-f] install WM_ROOT"
+    echo $"       $PRG [-f] [-u USER] [-g GROUP] install WM_ROOT"
     echo $"       $PRG install_symlinks WM_ROOT"
     echo $"       $PRG uninstall_symlinks WM_ROOT"
     echo $"       $PRG install_aliases WM_ROOT"
     echo $"       $PRG uninstall_aliases"
     echo $"       "
+	echo $"       Default user = webm, default group = webm"
+	echo $"       "
     echo $"       Installed components: "
     index=0
     for i in ${WM_COMP[@]}; do
